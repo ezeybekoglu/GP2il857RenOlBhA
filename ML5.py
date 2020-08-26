@@ -95,7 +95,7 @@ for n in ["entropy","gini"]:
     scores = cross_val_score(classifier, X, y, cv=5)
     #classifier.fit(X_train, Y_train)
     #Y_pred = classifier.predict(X_test)
-    print("DecisionTreeClassifier Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+    print("DecisionTreeClassifier "+n+" Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 #Fitting extra Tree Algorithm entropy
 from sklearn.ensemble import ExtraTreesClassifier
@@ -105,7 +105,7 @@ for n in ["entropy","gini"]:
     scores = cross_val_score(classifier, X, y, cv=5)
     #classifier.fit(X_train, Y_train)
     #Y_pred = classifier.predict(X_test)
-    print("ExtraTreesClassifier Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
+    print("ExtraTreesClassifier "+n+" Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 
 
