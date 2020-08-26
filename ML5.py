@@ -59,25 +59,6 @@ X = np.array(df.drop(['y'], 1))
 
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, y, test_size = 0.25, random_state = 1)
-print(Y_test)
-
-from sklearn.metrics import hamming_loss
-from sklearn.metrics import accuracy_score
-from sklearn.metrics import f1_score
-from sklearn.metrics import precision_score
-from sklearn.metrics import auc
-from sklearn.metrics import roc_curve
-from functools import partial
-
-metrics = {
-    "hamming_loss": hamming_loss,
-    "subset_accuracy": accuracy_score,
-    "macro-f1": partial(f1_score, average="macro"),
-    "micro-f1": partial(f1_score, average="micro"),
-    "AUC" : auc,
-    "weighted-f1": partial(f1_score, average="weighted"),
-}
-
 
 #Fitting Naive_Bayes
 from sklearn.naive_bayes import GaussianNB
