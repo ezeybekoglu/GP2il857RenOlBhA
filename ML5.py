@@ -178,10 +178,10 @@ for n in ["K-NN manhattan_distance","K-NN euclidean_distance"]:
 
 
 #GaussianNB Accuracy: 0.92 (+/- 0.03)
-#DecisionTreeClassifier Accuracy: 0.50 (+/- 0.51)
-#DecisionTreeClassifier Accuracy: 0.42 (+/- 0.37)
-#ExtraTreesClassifier Accuracy: 0.63 (+/- 0.36)
-#ExtraTreesClassifier Accuracy: 0.65 (+/- 0.33)
+#DecisionTreeClassifier entropy Accuracy: 0.50 (+/- 0.51)
+#DecisionTreeClassifier gini Accuracy: 0.42 (+/- 0.37)
+#ExtraTreesClassifier entropy Accuracy: 0.63 (+/- 0.36)
+#ExtraTreesClassifier gini Accuracy: 0.65 (+/- 0.33)
 #LogisticRegression Accuracy: 0.93 (+/- 0.02)
 #LinearDiscriminantAnalysis svd Accuracy: 0.93 (+/- 0.03)
 #LinearDiscriminantAnalysis lsqr Accuracy: 0.93 (+/- 0.03)
@@ -190,7 +190,7 @@ for n in ["K-NN manhattan_distance","K-NN euclidean_distance"]:
 #AdaBoostClassifier Accuracy: 0.75 (+/- 0.45)
 #QuadraticDiscriminantAnalysis Accuracy: 0.91 (+/- 0.05)
 #k=7
-#K-NN Accuracy: 0.93 (+/- 0.01)
-#K-NN Accuracy: 0.93 (+/- 0.01)
+#K-NN K-NN manhattan_distance Accuracy: 0.93 (+/- 0.01)
+#K-NN K-NN euclidean_distance Accuracy: 0.93 (+/- 0.01)
 
 
