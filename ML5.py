@@ -53,6 +53,8 @@ print(df.corr)
 
 
 y = np.array(df['y'])
+df = df.drop(['month',], 1)
+df = df.drop(['day',], 1)
 X = np.array(df.drop(['y'], 1))
 
 
@@ -158,18 +160,18 @@ for n in ["K-NN manhattan_distance","K-NN euclidean_distance"]:
     print("K-NN Accuracy: %0.2f (+/- %0.2f)" % (scores.mean(), scores.std() * 2))
 
 
-#GaussianNB Accuracy: 0.92 (+/- 0.03)
-#DecisionTreeClassifier entropy Accuracy: 0.50 (+/- 0.51)
-#DecisionTreeClassifier gini Accuracy: 0.42 (+/- 0.37)
-#ExtraTreesClassifier entropy Accuracy: 0.63 (+/- 0.36)
-#ExtraTreesClassifier gini Accuracy: 0.65 (+/- 0.33)
-#LogisticRegression Accuracy: 0.93 (+/- 0.02)
+#GaussianNB Accuracy: 0.93 (+/- 0.03)
+#DecisionTreeClassifier entropy Accuracy: 0.89 (+/- 0.04)
+#DecisionTreeClassifier gini Accuracy: 0.88 (+/- 0.04)
+#ExtraTreesClassifier entropy Accuracy: 0.92 (+/- 0.01)
+#ExtraTreesClassifier gini Accuracy: 0.92 (+/- 0.01)
+#LogisticRegression Accuracy: 0.93 (+/- 0.01)
 #LinearDiscriminantAnalysis svd Accuracy: 0.93 (+/- 0.03)
 #LinearDiscriminantAnalysis lsqr Accuracy: 0.93 (+/- 0.03)
 #LinearDiscriminantAnalysis eigen Accuracy: 0.93 (+/- 0.03)
-#RandomForestClassifier Accuracy: 0.90 (+/- 0.06)
-#AdaBoostClassifier Accuracy: 0.75 (+/- 0.45)
-#QuadraticDiscriminantAnalysis Accuracy: 0.91 (+/- 0.05)
+#RandomForestClassifier Accuracy: 0.93 (+/- 0.00)
+#AdaBoostClassifier Accuracy: 0.92 (+/- 0.02)
+#QuadraticDiscriminantAnalysis Accuracy: 0.93 (+/- 0.03)
 #k=7
 #K-NN K-NN manhattan_distance Accuracy: 0.93 (+/- 0.01)
 #K-NN K-NN euclidean_distance Accuracy: 0.93 (+/- 0.01)
